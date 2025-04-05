@@ -4,8 +4,8 @@ import Game from "./components/game";
 
 function App () {
   
-  const [name, setname] = useState["noob1", "noob2"]
-  const [gameState, setGameState] = useState(false) 
+  // const [name, setname] = useState["noob1", "noob2"]
+  // const [gameState, setGameState] = useState(false) 
 
   // wanted to show a form which will take the names and then we will start the game but no time
 
