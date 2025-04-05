@@ -123,11 +123,11 @@ interface CellProps {
 const Cell: React.FC<CellProps> = ({ setState, cellState, position }) => {
     return (
         <div 
-            className="border-2 border-gray-400 h-24 w-24 cursor-pointer hover:bg-gray-100"
+            className="border-2 border-gray-400 h-24 w-24 cursor-pointer hover:bg-black/20"
             onClick={() => setState(position[0], position[1])}
         >
-            {cellState === true && <div className="flex items-center justify-center text-6xl h-full w-full">O</div>}
-            {cellState === false && <div className="flex items-center justify-center text-6xl h-full w-full">X</div>}
+            {cellState === true && <div className="flex items-center justify-center text-6xl h-full w-full text-green-300">O</div>}
+            {cellState === false && <div className="flex items-center justify-center text-6xl h-full w-full text-red-300">X</div>}
             {cellState === null && <div className="flex items-center justify-center text-6xl h-full w-full"></div>}
         </div>
     );
